@@ -20,7 +20,7 @@ export async function createEnvLevelConstructs(context) {
   Object.assign(
     updatedMeta,
     await createNetworkResources(context, stackName, hasContainers),
-    consolidateApiGatewayPolicies(context, stackName),
+//     consolidateApiGatewayPolicies(context, stackName),
     await uploadAuthTriggerTemplate(context)
   );
 
